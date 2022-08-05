@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-const useMode () => {
+const useColorMode = () => {
   const DARK_MODE = 'dark'
   const LIGHT_MODE = 'light'
 
@@ -24,8 +24,9 @@ const useMode () => {
   }
 
   const saveColorMode = mode => {
-    ;(!savedColorModePreference || savedColorModePreference !== mode) &&
+    if (!savedColorModePreference || savedColorModePreference !== mode) {
       localStorage.setItem('color-mode-preference', mode)
+    }
     applyColorMode(mode)
     setColorMode(mode)
   }
@@ -36,4 +37,4 @@ const useMode () => {
   }
 }
 
-export { useMode }
+export { useColorMode, DARK_MODE, LIGHT_MODE }

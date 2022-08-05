@@ -1,0 +1,30 @@
+{
+  "name": "react-darkmode-hook",
+  "version": "1.0.0",
+  "description": "darkmode-hook is a custom react state hook intended to make adding darkmode support and management to any react app easy. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/becks256/darkmode-react-hook.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "dark",
+    "mode",
+    "dark-mode",
+    "darkmode"
+  ],
+  "author": "Becks256",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/becks256/darkmode-react-hook/issues"
+  },
+  "homepage": "https://github.com/becks256/darkmode-react-hook#readme",
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}
