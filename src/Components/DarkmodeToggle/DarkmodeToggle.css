@@ -1,0 +1,38 @@
+.DarkmodeToggle.light-mode,
+.DarkmodeToggle.dark-mode {
+  fill: currentColor;
+}
+.DarkmodeToggle.icon-xtra-small {
+  width: 12px;
+  height: 12px;
+}
+.DarkmodeToggle.icon-small {
+  height: 18px;
+  width: 18px;
+}
+.DarkmodeToggle.icon-medium {
+  width: 24px;
+  height: 24px;
+}
+.DarkmodeToggle.icon-large {
+  width: 36px;
+  height: 36px;
+}
+.DarkmodeToggle.icon-xtra-large {
+  width: 48px;
+  height: 48px;
+}
+.DarkmodeToggle.icon-2x-large {
+  width: 96px;
+  height: 96px;
+}
+.DarkmodeToggle.icon-3x-large {
+  width: 144px;
+  height: 144px;
+}
+
+@keyframes drawPath {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
