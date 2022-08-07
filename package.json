@@ -1,10 +1,13 @@
 {
   "name": "react-darkmode-hook",
   "version": "1.0.0",
-  "description": "darkmode-hook is a custom react state hook intended to make adding darkmode support and management to any react app easy. ",
-  "main": "index.js",
+  "description": "react-darkmode-hook is a custom react state hook intended to make adding darkmode support and management to any react app easy. ",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -rf dist && NODE_ENV=production babel src --out-dir dist --copy-files"
   },
   "repository": {
     "type": "git",
@@ -24,7 +27,13 @@
     "url": "https://github.com/becks256/darkmode-react-hook/issues"
   },
   "homepage": "https://github.com/becks256/darkmode-react-hook#readme",
-  "dependencies": {
-    "react": "^18.2.0"
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.10",
+    "@babel/preset-react": "^7.18.6"
   }
 }
